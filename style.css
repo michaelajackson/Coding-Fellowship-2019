@@ -28,7 +28,7 @@ h1{
 }
 /* Navbar links */
 .topnav a {
-    float: right;
+    float: left;
     display: block;
     color: black;
     text-align: center;
@@ -40,3 +40,16 @@ h1{
     background-color: #ffffff;
     color: #b5b5b5
 }
+/*Style the "active" element to highlight the current page*/
+.topnav a.active{
+    background-color: #ffffff;
+    color: #b5b5b5
+}
+.topnav input[type=text]{
+    float:right;
+    padding:6px;
+    border: none;
+    margin-top:8px;
+    margin-right: right 16px;
+    font-size:14px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
