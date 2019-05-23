@@ -30,3 +30,43 @@ p{
     width:100%;
     height: 4cm;
 }
+p.italic{
+    font-style: italic;
+}
+.topnav{
+    overflow: hidden;
+    background-color: #ffffff
+}
+/* Navbar links */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Links- change color on hover*/
+.topnav a:hover {
+    background-color: #ffffff;
+    color: #b5b5b5
+}
+/*Style the "active" element to highlight the current page*/
+.topnav a.active{
+    background-color: #ffffff;
+    color: #b5b5b5
+}
+.topnav input[type=text]{
+    float:right;
+    padding:6px;
+    border: none;
+    margin-top:8px;
+    margin-right: right 16px;
+    font-size:14px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.topnav-right{
+    float:right;
+}
+
+  
