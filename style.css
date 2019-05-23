@@ -19,7 +19,11 @@ p.dotted {border-style: dotted;}
 h1{
     word-spacing:15px;
     font-family:'Gill Sans';
-    font: size 20vw;
+    font:size 5vw; 
+    color: #82b7d8; 
+    background-color: #ffffff; 
+    padding:5px;
+    text-align:left;
 }
 /* The nav bar container*/
 .topnav{
@@ -52,4 +56,18 @@ h1{
     margin-top:8px;
     margin-right: right 16px;
     font-size:14px;
-    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.topnav-right{
+    float:right
+}
+h2{
+    Text-align:center;
+    font-size:15px;
+    font-family: 'lucida grande', 'lucida sans','arial', 'san-serif';
+}
+ul{
+    text-align:center;
+    font-size:15px;
+    font-family: 'lucida grande';
+}

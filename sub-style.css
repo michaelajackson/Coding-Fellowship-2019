@@ -1,0 +1,32 @@
+h1{
+    word-spacing:15px;
+    font-family:'Gill Sans';
+    font: size 20vw;
+    font:size 5vw; 
+    color: #82b7d8; 
+    background-color: #ffffff; 
+    padding:5px;
+    text-align:left;
+}
+h2{
+    text-align:left;
+    font-family: 'lucida grande';
+    margin-left: 2cm
+}
+h3{
+    text-align:left;
+    font-family: 'lucida grande';
+    margin-left:2cm
+}
+p{
+    text-align: left;
+    font-family: 'lucida grande';
+    margin-left: 2cm;
+    margin-right: 14cm
+}
+.footer{
+    background-color: #fcbe41;
+    padding:20px;
+    width:100%;
+    height: 4cm;
+}
