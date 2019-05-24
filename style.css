@@ -28,7 +28,8 @@ h1{
 /* The nav bar container*/
 .topnav{
     overflow: hidden;
-    background-color: #ffffff
+    background-color: #ffffff;
+    margin-left: 2cm
 }
 /* Navbar links */
 .topnav a {
@@ -87,6 +88,9 @@ h1{
     width:25%;
     font-family:'lucida grande'
 }
+.column-right{
+    width: 75%
+}
 .footer{
     background-color: #fcbe41;
     padding:20px;
@@ -98,4 +102,7 @@ input{
 }
 p{
     font-family:'lucida grande'
+}
+div{
+    margin-left: 2cm
 }
