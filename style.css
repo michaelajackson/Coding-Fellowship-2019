@@ -1,13 +1,18 @@
 
 body{
         background-color:rgb(255, 255, 255);
+        margin-left:150px;
+        margin-right:150px;
     }
 .right{
     float: right;
     width: 300px
 }
-.PageWrapper{
-    max-width: width 800px;-x; margin:auto; background-color: white; padding:10px;
+.PageWrapper{ 
+    background-color: blue; 
+    padding:10px;
+    margin-left:150px;
+    float: center;
 }
 .Sanserif{
     font-family:Arial, Helvetica, sans-serif,'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif
@@ -15,30 +20,31 @@ body{
 .monospace{
     font-family:'Courier New', Courier, monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif,
 }
-p.dotted {border-style: dotted;}
+p.dotted {
+    border-style: dotted;
+}
 h1{
     word-spacing:15px;
     font-family:'Gill Sans';
-    font:size 5vw; 
     color: #82b7d8; 
     background-color: #ffffff; 
     padding:5px;
-    text-align:left;
+    float:center;
 }
 /* The nav bar container*/
 .topnav{
     overflow: hidden;
-    background-color: #ffffff;
-    margin-left: 2cm
+    background-color: white;
+    text-align: center;
+
 }
 /* Navbar links */
 .topnav a {
-    float: left;
     display: block;
     color: black;
-    text-align: center;
-    padding: 14px 16px;
+    padding:14px 16px;
     text-decoration: none;
+    float:left;
 }
 /* Links- change color on hover*/
 .topnav a:hover {
@@ -58,15 +64,15 @@ h1{
     margin-right: right 16px;
     font-size:14px;
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f4f4f4
 }
 .topnav-right{
     float:right
 }
 h2{
-    Text-align:center;
+    Text-align:left;
     font-size:20px;
     font-family: 'lucida grande', 'lucida sans','arial', 'san-serif';
-    font-style: italic;
 }
 ul{
     text-align:center;
@@ -76,19 +82,20 @@ ul{
 h1{
     word-spacing:15px;
     font-family:'Gill Sans';
-    font: size 20vw;
+    font-size: 4vw;
     font:size 5vw; 
     color: #82b7d8; 
     background-color: #ffffff; 
     padding:5px;
     text-align:left;
+    margin-left:150px;
 }
-.column{
+.smallcolumn{
     float:right;
     width:25%;
     font-family:'lucida grande'
 }
-.column-right{
+.column-left{
     width: 75%
 }
 .footer{
@@ -100,9 +107,89 @@ h1{
 input{
     font-style:'lucida grande'
 }
-p{
-    font-family:'lucida grande'
+.bordertop{
+    border-top-style: solid;
+    border-width: 1px;
+    padding:5px;
+    margin-right:150px;
+    margin-left:150px;
+    border-color:#f4f4f4
 }
-div{
-    margin-left: 2cm
+.dropbtn{
+    background-color:#f7f7f7;
+    color: white;
+    padding: 16px;
+    font-size: 12px;
+    border:none;
+    cursor: pointer;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px,16px;
+    text-decoration: none;
+    display:block;
+}
+.dropdown-content a:hover{
+    background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.dropdown:hover .dropbtn{
+    background-color: #b5b5b5;
+}
+.fakeimg{
+    background-color:#c5c5c5;
+    padding: 20px;
+    margin-top: 20px;
+    height: 300px;
+    width: 600px;
+    Float: center;
+}
+/* Add a card effect for articles*/
+.card{
+    background-color;
+    padding:20px;
+    margin-top:20px;
+    border-color: #b5b5b5;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+ul{
+    float: center; 
+    font-family: 'Lucida Grande';
+    font-size: 14px;
+}
+.h2italic{
+    font-style:italic;
+    text-align:center;
+}
+.searchbutton{
+    float:right
+}
+h3{
+    text-align:left;
+    font-family: 'lucida grande';
+    margin-left:2cm
+}
+.p1{
+    text-align: left;
+    font-family: 'lucida grande';
+    margin-right: 14cm;
+    font-size:12px;
+}
+p{
+    font-family: 'lucida grande';
+    font-size:14px;
+}
+.divbig{
+    height:200px;
+    background-color:white 
+}
+.halfcolumn{
+    
 }
