@@ -12,7 +12,7 @@
             <ul>
                 <button type='submit' class='searchbutton'><i class='fa fa-search'></i></button>
                 <input class='topnav-right; searchbutton;' type='text' placeholder='Search...'>
-                <a href='hello.html'>Home</a>
+                <a href='home.php'>Home</a>
                 <a href='about.html'>About</a>    
                 <a href='visual.html'>Art</a>
                 <a href='Photography.html'>Photography</a>
@@ -24,6 +24,7 @@
 
 <body>
  <h2 class='h2italic'>Featured</h2>
+ 
 <div>
 <div class='card; bordertop'>
     <p class='p1'>this week</p>
@@ -32,12 +33,14 @@
     <p>Description about post...</p>
     <h6>00/00/00</h6>
 </div>
+<?php
+$input1
 
 <div class='divbig'></div>
 <div class='card; bordertop'>
     <p class='p1'>featured writing</p>
-    <div class= 'column'
-</div>  
+    <div class= 'halfcolumn;'></div>
+    </div>
 </div>
 
 

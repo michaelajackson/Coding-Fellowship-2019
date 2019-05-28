@@ -113,7 +113,7 @@ input{
     padding:5px;
     margin-right:150px;
     margin-left:150px;
-    border-color:#f4f4f4
+    border-color:#c4c4c4
 }
 .dropbtn{
     background-color:#f7f7f7;
@@ -191,5 +191,14 @@ p{
     background-color:white 
 }
 .halfcolumn{
-    
+    float:left;
+    width:50%
+}
+.img{
+    background-color:#c5c5c5;
+    padding: 20px;
+    margin-top: 20px;
+    height: 300px;
+    width: 100px;
+    Float: left;
 }
