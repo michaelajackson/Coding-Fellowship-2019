@@ -1,8 +1,8 @@
 
 body{
         background-color:rgb(255, 255, 255);
-        margin-left:150px;
-        margin-right:150px;
+        margin-left:100px;
+        margin-right:100px;
     }
 .right{
     float: right;
@@ -61,7 +61,7 @@ h1{
     padding:6px;
     border: none;
     margin-top:8px;
-    margin-right: right 16px;
+    margin-right:16px;
     font-size:14px;
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #f4f4f4
@@ -111,26 +111,21 @@ input{
     border-top-style: solid;
     border-width: 1px;
     padding:5px;
-    margin-right:150px;
-    margin-left:150px;
-    border-color:#c4c4c4
+    border-color:#c4c4c4;
 }
-
-
-
 .fakeimg{
     background-color:#c5c5c5;
     padding: 20px;
     margin-top: 20px;
-    height: 300px;
-    width: 600px;
+    height: 50px;
+    width: 60px;
     Float: center;
 }
 /* Add a card effect for articles*/
 .card{
-    background-color;
-    padding:20px;
-    margin-top:20px;
+    background-color:white;
+    padding: 20px;
+    margin-top: 20px;
     border-color: #b5b5b5;
     margin-right: 150px;
     margin-left: 150px;
@@ -166,9 +161,15 @@ p{
     height:200px;
     background-color:white 
 }
-.halfcolumn{
+.column{
     float:left;
-    width:50%
+    width:50%;
+    padding:15px;
+}
+.row{
+    content:"";
+    display: table;
+    clear:both;
 }
 .photo{
     background-image:url(test.jpg);
@@ -179,4 +180,14 @@ p{
     font-family:'lucida grande';
     color: white;
     
+}
+
+.halfcolumn-right{
+    float:right;
+    width:50%
+}
+.overlay{
+    background-color:blue;
+    opacity:0.2;
+
 }

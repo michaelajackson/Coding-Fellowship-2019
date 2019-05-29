@@ -21,3 +21,12 @@ echo abolutevalue(-2). "<br/>";
 
 */
 
+echo "
+<h1>Courtyard Collective</h1>
+"; 
+
+function echoHeader(){
+    echo "
+        <div 
+    "
+}

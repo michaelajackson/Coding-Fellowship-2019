@@ -1,21 +1,13 @@
 <html>
 <head>
    <link rel="stylesheet" type='text/css' href="style.css"/>
-   <title>Submissions</title>
-   <div class='PageWrapper'style='max-width:800px; margin:auto; background-color: white; padding:10px;'></div>
+
+   <?php
+   include('config/init.php');
+      echoHeader('Submissions');
+   ?>
+   
    <body>
-       <h1>COURTYARD COLLECTIVE</h1>
-       <div class='topnav;topnav a; topnav a:hover'>
-            <ul style='float: left; font-family: Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;font-size: 14px'>
-                <input class='topnav-right'style='float:right;'type='text' placeholder='Search...'>
-                <a href='home.php'>Home</a>
-                <a href='about.html'>About</a>    
-                <a href='visual.html'>Art</a>
-                <a href='Photography.html'>Photography</a>
-                <a href='Writing.html'>Writing</a>
-                <a href='submissions.html'>Submissions</a>
-            </ul>
-                </div> 
     <h2>How to Send Submissions</h2>
     <h3>Submission Email: courtyardsubmissions@gmail.com</h3>
     <p>Written Submissions:</p>
@@ -27,6 +19,7 @@
       brief synopsis describing you work(not required).Include your name and pronouns.</p>
         <p>Art Submissions:</p> 
      <p>Send a scan of your work or photos of your work through email. Include title of piece, medium, and year you created it. Also include name and pronouns.</p>
+     <div
      <div class='footer'>
         <p class='p.italic'>Email us: courtyardcollective@gmail.com </p>
         <p class='p.italic'>Submissions: courtyardsubmissions@gmail.com</p>
