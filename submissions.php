@@ -19,7 +19,7 @@
       brief synopsis describing you work(not required).Include your name and pronouns.</p>
         <p>Art Submissions:</p> 
      <p>Send a scan of your work or photos of your work through email. Include title of piece, medium, and year you created it. Also include name and pronouns.</p>
-     <div
+
      <div class='footer'>
         <p class='p.italic'>Email us: courtyardcollective@gmail.com </p>
         <p class='p.italic'>Submissions: courtyardsubmissions@gmail.com</p>

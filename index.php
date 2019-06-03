@@ -25,8 +25,3 @@ echo "
 <h1>Courtyard Collective</h1>
 "; 
 
-function echoHeader(){
-    echo "
-        <div 
-    "
-}
