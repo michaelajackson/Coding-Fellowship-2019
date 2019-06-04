@@ -3,7 +3,14 @@
 <?php
  include('config/init.php');
  echoHeader('Courtyard Collective');
+ 
+ if(isset($_REQUEST['newEmail'])){
+    getEmail(
+        $_REQUEST['email']
+    );
+}
  ?>
+
 
  <h2 class='h2italic'>Featured</h2>
  
@@ -56,5 +63,12 @@
 <div class='divbig'></div>
 </body>
 
-<div class='footer'></div>
+<div class='footer'>
+    <h3>Sign Up for our Newletter</h3>
+    <form action='' method='post'>
+    Email:
+    <input type='text' name='email'/><br/>
+    <input type='submit' name='newEmail' value='Submit'/>
+</form> 
+</div>
 </html>

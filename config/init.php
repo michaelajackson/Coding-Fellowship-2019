@@ -6,3 +6,5 @@ include('include/header.php');
 //include('include/blog.php');
 include('include/writing_post.php');
 include('include/issues.php');
+include('include/comments.php');
+include('include/email.php');

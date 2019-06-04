@@ -18,3 +18,4 @@ foreach($blogPosts as $blogPost){
 }
 
 ?>
+
