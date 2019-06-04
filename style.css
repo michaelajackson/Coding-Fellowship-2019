@@ -95,6 +95,15 @@ h1{
     padding:20px;
     width:100%;
     height: 4cm;
+
+
+}
+.footeroverlay{
+    background-color:white;
+    height: 100px;
+    width:500px;
+    padding: 40px;
+    align-items: center;
 }
 input{
     font-style:'lucida grande'
@@ -215,6 +224,30 @@ p{
 .dropdown:hover .dropbtn{
     background-color:white;
 }
+    .topnav{
+        display:none;
+    
+    }
+    /* Navbar links */
+    .topnav a {
+        display: none;
+       
+    }
+    /* Links- change color on hover*/
+    .topnav a:hover {
+        display:none;
+    }
+    /*Style the "active" element to highlight the current page*/
+    .topnav a.active{
+        display:none;
+    }
+    .topnav input[type=text]{
+        display:none;
+    }
+    .topnav-right{
+        display:none;
+
+}
 }
 .parent{
     display:flex;
@@ -267,4 +300,8 @@ div.transbox{
     opacity:0.7;
     height:200px;
     width: 300px;
+}
+p .italic{
+    font-style:italic;
+    font-family: "lucida grande";
 }

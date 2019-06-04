@@ -1,10 +1,20 @@
+
 <?php
 
 include('config/init.php');
+echoHeader('Writing');
+
+$blogPosts = getAllBlogPosts();
 
 
-$result = getAllBlogPosts();
+echo "
+<h2> Fiction</h2>
+";
 
-var_dump($result);
+foreach($blogPosts as $blogPost){
+    echo "<a href='/viewPost.php?blogPostId=".$blogPost['blogPostId']."'>
+        ".$blogPost['title']."
+        </a><br />";
+}
 
-
+?>

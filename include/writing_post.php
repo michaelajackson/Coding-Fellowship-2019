@@ -3,8 +3,8 @@ function getBlogPost($blogPostId){
 
 $result=dbQuery('
     SELECT *
-    FROM blogPost
-    WHERE blogPostId = :blogPost
+    FROM blogPosts
+    WHERE blogPostId = :blogPostId
 ', array(
     'blogPostId'=> $blogPostId
 )
@@ -16,7 +16,7 @@ $result=dbQuery('
 function getAllBlogPosts(){
     $result=dbQuery('
     SELECT *
-    FROM blogPost
+    FROM blogPosts
 ', array())->fetchAll();
     return $result;
 }

@@ -53,7 +53,8 @@
 
 
 </div>  
-<div class='divbig'>
-<div class='footer'></div>
+<div class='divbig'></div>
 </body>
+
+<div class='footer'></div>
 </html>
