@@ -1,18 +1,24 @@
 
 body{
     background-color:white;
-    margin-left:100px;
-    margin-right:100px;
+    margin-left:50px;
+    margin-right:50px;
 }
 .right{
     float: right;
     width: 300px
 }
-.PageWrapper{ 
-    background-color: blue; 
+.pageWrapper{ 
+    background-color:#c4c4c4; 
     padding:10px;
-    margin-left:150px;
+    margin-left:auto;
+    margin-right:auto;
     float: center;
+    
+}
+.center{
+    text-align:center;
+    padding:5px;
 }
 .Sanserif{
     font-family:Arial, Helvetica, sans-serif,'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif
@@ -82,28 +88,31 @@ ul{
 h1{
     word-spacing:15px;
     font-family:'Gill Sans';
-    font-size: 4vw;
-    font:size 5vw; 
+    font-size: 4vw; 
     color: #82b7d8; 
     background-color: #ffffff; 
     padding:5px;
     text-align:left;
-    margin-left:150px;
+    
 }
 .footer{
-    background-color: #fcbe41;
-    padding:20px;
     width:100%;
-    height: 4cm;
-
-
+    right:0;
+    background-color:#82b7d8;
+    color: black;
+    text-align:center;
+    position: absolute;
+    height:300px;
 }
-.footeroverlay{
-    background-color:white;
-    height: 100px;
-    width:500px;
-    padding: 40px;
-    align-items: center;
+.footerh2{
+    padding:5px;
+    margin-left:50px;
+    color: white;
+    font-family:'gill sans';
+    font-size:2vw;
+    word-spacing:10px;
+    margin-top:50px; 
+    height:30px;
 }
 input{
     font-style:'lucida grande'
@@ -254,13 +263,14 @@ p{
     flex-direction:row;
     box-flex:row wrap;
     justify-content: space-between;
-    margin:20px;
+    margin:auto;
     margin-bottom: 50px;
 }
 .child{
-    width:100px;
-    height:100px;
+    width: auto;
+    height:75px;
     margin:auto;
+    
 }
 .pic{
     background-image: url(tinypic.jpg);
@@ -304,4 +314,80 @@ div.transbox{
 p .italic{
     font-style:italic;
     font-family: "lucida grande";
+}
+.borderleft{
+    border-left-style: solid;
+    border-width: 1px;
+    padding:5px;
+    border-color:#c4c4c4;
+}
+.rightborder{
+    border-right-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    border-color: #c4c4c4;
+    height: 10px;
+}
+.rcorners{
+    border-radius: 5px;
+    border: 2px #c4c4c4;
+    padding: 5px;
+    width:50%; 
+}
+.divround{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-right:200px;
+    margin-left:200px;
+    margin-top:50px;
+}
+.h4{
+    font-family:'lucida grande';
+    padding:10px;
+}
+.foot{
+    font-family:'lucida grande';
+    margin-right:50px;
+    color:white;
+    float:right;
+    margin-top:50px;
+    margin-left: 40px;
+    font-size: 15px;
+    
+}
+.newslttrinput{
+    float:right;
+    padding:6px;
+    border:none;
+    margin-top:8px;
+    margin-right:16px;
+    font-size:14px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:transparent;
+    border-bottom:solid 1px white;
+    border-right: solid 1px white;
+    color:white;
+    
+}
+.subbutton{
+    background-color:transparent;
+    height:40px;
+    margin-top:5px;
+    font-family:'lucida grande';
+    font-size: 15px;
+    border:none;
+    width:100px;
+    color: white
+}
+.rborder{
+    border-style: dotted;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-right:10px;
+}
+.placeholder{
+    color: white;
 }

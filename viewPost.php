@@ -4,7 +4,7 @@ include('config/init.php');
 
 
 $result=getAllBlogPosts();
-$blogPosts= getBlogPost($_GET['blogPostId']);
+$blogPosts= getBlogPost($_GET['categoryId']);
 
 
 echoHeader("".$blogPosts['title'], "".$blogPosts ['description']);

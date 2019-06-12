@@ -10,5 +10,5 @@ function createComment($content){
             'content'=>$_REQUEST['content']
         ]
     );
-//return $content;
+return $content;
 }

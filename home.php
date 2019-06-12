@@ -9,8 +9,8 @@
         $_REQUEST['email']
     );
 }
- ?>
 
+?> 
 
  <h2 class='h2italic'>Featured</h2>
  
@@ -27,25 +27,25 @@
 
 <div class='card; bordertop'>
     <p class='p1'>featured poetry</p>
-    <div class= 'parent'>
-        <div class='child'>
-            <div class='pic4'></div>
-            <a href='post.php'><h4>Title</h4> </a>
-        </div>
-        <div class='child'>
-            <div class='pic3'></div>
-            <a href='post.php'><h4>Title</h4> </a>
-        </div>
+            <div class= 'parent'>
+                <div class='child'>
+                <div class='pic4'></div></div>
+                <div class='child'><a href='post.php'><h4>Title</h4> </a></div>
+            
+                <div class='child'>
+                <div class='pic3'></div>
+                <div class= 'child'><a href='post.php'><h4>Title</h4> </a></div>
+            </div>
 </div>
-    <div class='parent'>
-        <div class='child'>
-            <div class='pic2'></div>
-            <a href='post.php'><h4>Title</h4> </a>
-        </div>
-        <div class='child'>
-            <div class=pic></div>
-            <a href='post.php'><h4>Title</h4> </a>
-        </div>
+            <div class='parent'>
+                <div class='child'>
+                <div class='pic2'></div></div>
+                <div class='child'><a href='post.php'><h4>Title</h4> </a></div>
+            
+                <div class='child'>
+                <div class=pic></div>
+                <div class='child'><a href='post.php'><h4>Title</h4> </a></div>
+            </div>
     </div>
 
 </div>
@@ -62,13 +62,8 @@
 </div>  
 <div class='divbig'></div>
 </body>
+<?php
+echoFooter();
+?>
 
-<div class='footer'>
-    <h3>Sign Up for our Newletter</h3>
-    <form action='' method='post'>
-    Email:
-    <input type='text' name='email'/><br/>
-    <input type='submit' name='newEmail' value='Submit'/>
-</form> 
-</div>
 </html>

@@ -8,7 +8,7 @@ $blogPosts = getAllBlogPosts();
 
 
 echo "
-<h2> Fiction</h2>
+<h2> All Writings</h2>
 ";
 
 foreach($blogPosts as $blogPost){

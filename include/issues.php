@@ -3,8 +3,8 @@
 function getIssue($issueId){
     $result= dbQuery('
         SELECT *
-        FROM issues
-        WHERE issueId= :issues
+        FROM issue
+        WHERE issueId= :issue
     ', array(
         'issueId'=> $issueId
     )
@@ -15,7 +15,7 @@ function getIssue($issueId){
 function getAllIssues(){
     $result= dbQuery('
         SELECT *
-        FROM issues
+        FROM issue
     ', array())->fetchAll();
         return $result;
 }
