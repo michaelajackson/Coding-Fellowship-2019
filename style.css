@@ -1,11 +1,393 @@
 
 body{
-        background-color:#eee;
-    }
-.PageWrapper{
-    max-width:800-x; margin:auto; background-color: white; padding:10px;
+    background-color:white;
+    margin-left:50px;
+    margin-right:50px;
+}
+.right{
+    float: right;
+    width: 300px
+}
+.pageWrapper{ 
+    background-color:#c4c4c4; 
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+    float: center;
+    
+}
+.center{
+    text-align:center;
+    padding:5px;
 }
 .Sanserif{
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif,'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif
 }
-p.dotted {border-style: dotted;}
+.monospace{
+    font-family:'Courier New', Courier, monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif,
+}
+p.dotted {
+    border-style: dotted;
+}
+h1{
+    word-spacing:15px;
+    font-family:'Gill Sans';
+    color: #82b7d8; 
+    background-color: #ffffff; 
+    padding:5px;
+    float:center;
+}
+/* The nav bar container*/
+.topnav{
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+
+}
+/* Navbar links */
+.topnav a {
+    display: block;
+    color: black;
+    padding:14px 16px;
+    text-decoration: none;
+    float:left;
+}
+/* Links- change color on hover*/
+.topnav a:hover {
+    background-color: #ffffff;
+    color: #b5b5b5
+}
+/*Style the "active" element to highlight the current page*/
+.topnav a.active{
+    background-color: #ffffff;
+    color: #b5b5b5
+}
+.topnav input[type=text]{
+    float:right;
+    padding:6px;
+    border: none;
+    margin-top:8px;
+    margin-right:16px;
+    font-size:14px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.topnav-right{
+    float:right
+}
+h2{
+    Text-align:left;
+    font-size:20px;
+    font-family: 'lucida grande', 'lucida sans','arial', 'san-serif';
+}
+ul{
+    text-align:center;
+    font-size:15px;
+    font-family: 'lucida grande';
+}
+h1{
+    word-spacing:15px;
+    font-family:'Gill Sans';
+    font-size: 4vw; 
+    color: #82b7d8; 
+    background-color: #ffffff; 
+    padding:5px;
+    text-align:left;
+    
+}
+.footer{
+    width:100%;
+    right:0;
+    background-color:#82b7d8;
+    color: black;
+    text-align:center;
+    position: absolute;
+    height:300px;
+}
+.footerh2{
+    padding:5px;
+    margin-left:50px;
+    color: white;
+    font-family:'gill sans';
+    font-size:2vw;
+    word-spacing:10px;
+    margin-top:50px; 
+    height:30px;
+}
+input{
+    font-style:'lucida grande'
+}
+.bordertop{
+    border-top-style: solid;
+    border-width: 1px;
+    padding:5px;
+    border-color:#c4c4c4;
+}
+.fakeimg{
+    background-color:#c5c5c5;
+    padding: 20px;
+    margin-top: 20px;
+    height: 50px;
+    width: 60px;
+    Float: left;
+}
+/* Add a card effect for articles*/
+.card{
+    background-color:white;
+    padding: 20px;
+    margin-top: 20px;
+    border-color: #b5b5b5;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+ul{
+    float: center; 
+    font-family: 'Lucida Grande';
+    font-size: 14px;
+}
+.h2italic{
+    font-style:italic;
+    text-align:center;
+}
+.searchbutton{
+    float:right
+}
+h3{
+    text-align:left;
+    font-family: 'lucida grande';
+    margin-left:2cm
+}
+.p1{
+    text-align: left;
+    font-family: 'lucida grande';
+    margin-right: 14cm;
+    font-size:12px;
+}
+p{
+    font-family: 'lucida grande';
+    font-size:14px;
+}
+.divbig{
+    height:200px;
+    background-color:white 
+}
+.row{
+    content:"";
+    display: table;
+    clear:both;
+}
+.photo{
+    background-image:url(test.jpg);
+    width:100%;
+    height: auto;
+
+}
+.img p{
+    font-family:'lucida grande';
+    color: white;
+
+}
+.responsiveImage{
+    width:100%;
+    height: auto;
+}
+.dropbtn{
+    display:none;
+}
+@media (max-width:600px){
+.dropbtn{
+    background-color:white;
+    color:black;
+    padding: 10px;
+    font-size: 12px;
+    border: solid;
+    border-width: 1px;
+    display:inline-block;
+    position:relative;
+}
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+.dropdown-content{
+    display:none;
+    position: absolute;
+    background-color: white;
+    min-width:160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+    
+}
+.dropdown-content a{
+    color:black;
+    padding:12px 16px;
+    text-decoration: none;
+    display:block;
+}
+.dropdown-content a:hover{
+    color:#b5b5b5
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.dropdown:hover .dropbtn{
+    background-color:white;
+}
+    .topnav{
+        display:none;
+    
+    }
+    /* Navbar links */
+    .topnav a {
+        display: none;
+       
+    }
+    /* Links- change color on hover*/
+    .topnav a:hover {
+        display:none;
+    }
+    /*Style the "active" element to highlight the current page*/
+    .topnav a.active{
+        display:none;
+    }
+    .topnav input[type=text]{
+        display:none;
+    }
+    .topnav-right{
+        display:none;
+
+}
+}
+.parent{
+    display:flex;
+    flex-direction:row;
+    box-flex:row wrap;
+    justify-content: space-between;
+    margin:auto;
+    margin-bottom: 50px;
+}
+.child{
+    width: auto;
+    height:75px;
+    margin:auto;
+    
+}
+.pic{
+    background-image: url(tinypic.jpg);
+    padding: 20px;
+    margin-top: 20px;
+    height: 60px;
+    width: 60px;
+}
+.pic2{
+    background-image: url(dog.jpg);
+    padding: 20px;
+    margin-top: 20px;
+    height: 60px;
+    width: 60px;
+    Float: left;
+}
+.pic3{
+    background-image: url(me.jpg);
+    padding: 20px;
+    margin-top: 20px;
+    height: 60px;
+    width: 60px;
+    Float: left;
+}
+.pic4{
+    background-image: url(basquiat.jpg);
+    padding: 20px;
+    margin-top: 20px;
+    height: 60px;
+    width: 60px;
+    Float: left;
+}
+div.transbox{
+    margin:30px;
+    background-color:white;
+    border:none;
+    opacity:0.7;
+    height:200px;
+    width: 300px;
+}
+p .italic{
+    font-style:italic;
+    font-family: "lucida grande";
+}
+.borderleft{
+    border-left-style: solid;
+    border-width: 1px;
+    padding:5px;
+    border-color:#c4c4c4;
+}
+.rightborder{
+    border-right-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    border-color: #c4c4c4;
+    height: 10px;
+}
+.rcorners{
+    border-radius: 5px;
+    border: 2px #c4c4c4;
+    padding: 5px;
+    width:50%; 
+}
+.divround{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-right:200px;
+    margin-left:200px;
+    margin-top:50px;
+}
+.h4{
+    font-family:'lucida grande';
+    padding:10px;
+}
+.foot{
+    font-family:'lucida grande';
+    margin-right:50px;
+    color:white;
+    float:right;
+    margin-top:50px;
+    margin-left: 40px;
+    font-size: 15px;
+    
+}
+.newslttrinput{
+    float:right;
+    padding:6px;
+    border:none;
+    margin-top:8px;
+    margin-right:16px;
+    font-size:14px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:transparent;
+    border-bottom:solid 1px white;
+    border-right: solid 1px white;
+    color:white;
+    
+}
+.subbutton{
+    background-color:transparent;
+    height:40px;
+    margin-top:5px;
+    font-family:'lucida grande';
+    font-size: 15px;
+    border:none;
+    width:100px;
+    color: white
+}
+.rborder{
+    border-style: dotted;
+    border-width: 2px;
+    border-color: white;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-right:10px;
+}
+.placeholder{
+    color: white;
+}
