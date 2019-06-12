@@ -18,7 +18,7 @@ if(isset($_REQUEST['newSignUp'])){
  <div class='bordertop'></div>  
 <form action='' method='post'>
         <div class='divround'>
-        <h2 class='center'> Sign Up</h2>
+        <h2 class='center'> Create Account</h2>
         <p class='center'>Please fill this form to create an account</p>
             <div><p>Full Name</p></div>
                 <input class='rcorners' type='text' name='name'/><br>
@@ -31,13 +31,6 @@ if(isset($_REQUEST['newSignUp'])){
             <input type='submit' name='newSignUp' value='Sign up'/>   
 </div>
 <div class='divbig'></div>
-<div class='footer'>
-    <h3>Sign Up for our Newletters</h3>
- <form action='' method='post'>
-    Email:
-    <input type='text' name='email'/><br/>
-    <input type='submit' name='newEmail' value='Submit'/>
-</form> 
-</div>
-        </form>
-   
+<?php
+echoFooter()
+?>   

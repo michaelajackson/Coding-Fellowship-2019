@@ -12,7 +12,6 @@ function getBlogPost($blogPostId){
 )->fetch();
     return $result; 
 }
-
 function getAllCategoryPost(){
     $result=dbQuery('
         SELECT *
@@ -20,6 +19,19 @@ function getAllCategoryPost(){
     ')->fetchAll();
         return $result;
 }
+
+function getCategoryPost($categoryId){
+    $result=dbQuery('
+        SELECT *
+        FROM category
+        WHERE categoryId= :categoryId
+    ', array(
+        'categoryId'=>$categoryId
+    )
+    )->fetch();
+        return $result;
+}
+
 
 function getAllBlogPosts(){
     $result=dbQuery('
@@ -29,4 +41,14 @@ function getAllBlogPosts(){
     ))->fetchAll();
     return $result;
     
+}
+
+function getAllCategories($categoryId){
+        $result=dbQuery('
+            SELECT *
+            FROM blogPosts
+            WHERE categoryId= :categoryId
+        ',array('categoryId'=>$categoryId)
+        )->fetchAll();
+        return $result;
 }

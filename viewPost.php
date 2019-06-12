@@ -3,11 +3,11 @@
 include('config/init.php');
 
 
-$result=getAllBlogPosts();
-$blogPosts= getBlogPost($_GET['categoryId']);
+$result=getAllCategories($_GET ['blogPostId']);
+$blogPosts= getBlogPost($_GET['blogPostId']);
 
 
-echoHeader("".$blogPosts['title'], "".$blogPosts ['description']);
+echoHeader("".$blogPosts['title']);
 
 echo "
 <h2>".$blogPosts['title']."</h2>
