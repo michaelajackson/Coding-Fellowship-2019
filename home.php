@@ -1,5 +1,4 @@
-<html>
-   
+
 <?php
  include('config/init.php');
  echoHeader('Courtyard Collective');

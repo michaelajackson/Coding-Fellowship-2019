@@ -2,30 +2,32 @@
 
 include('config/init.php');
 
-
+$comment=getAllComments($_GET['blogPostId']);
 $result=getAllCategories($_GET ['blogPostId']);
-$blogPosts= getBlogPost($_GET['blogPostId']);
+$blogPost=getBlogPost($_GET['blogPostId']);
 
-
-echoHeader("".$blogPosts['title']);
+echoHeader($blogPost['title']);
 
 echo "
-<h2>".$blogPosts['title']."</h2>
-<p>".$blogPosts['content']."</p> 
+<div class='bordertop'></div>
+<h2>".$blogPost['title']."</h2>
+<h5> By ".$blogPost['authorName']."</h5>
+<p>".$blogPost['content']."</p> 
 ";
 
 if(isset($_REQUEST['newComment'])){
     createComment(
         $_REQUEST['content']
-    );
-}
+       );
+} 
+echoCommentSection();
+
+foreach($comment as $comments)
+    echo "<p>".$comments['content']."</p>";
+
 ?>
- 
- 
- 
- <h3>Comments</h3>
-<form action='' method='post'>
-    Comment:
-    <input type='text' name='content'/><br/>
-    <input type='submit' name='newComment' value='Post'/>
-</form> 
+<div class='divbig'></div>
+
+<?php
+echoFooter();
+?>

@@ -1,6 +1,3 @@
-<html>
-<head>
-        <link rel="stylesheet" type='text/css' href="style.css"/>
 <?php
 include('config/init.php');
 echoHeader("About & Contact");
@@ -17,7 +14,7 @@ echoHeader("About & Contact");
             <br>
         </div>
          <h2>Contact Us</h2>
-    <p>Email: courtyardcollective@gmail.com</p>
+    <p><a href='mailto:courtyardcollective@gmail.com'> courtyardcollective@gmail.com</p>
 
 
 <div class='divbig'></div>

@@ -8,11 +8,11 @@ function getBlogPost($blogPostId){
 ', array(
     'blogPostId'=> $blogPostId
 ) 
-
 )->fetch();
     return $result; 
 }
-function getAllCategoryPost(){
+
+function getAllCategories(){
     $result=dbQuery('
         SELECT *
         FROM category
@@ -33,7 +33,7 @@ function getCategoryPost($categoryId){
 }
 
 
-function getAllBlogPosts(){
+/*function getAllBlogPosts(){
     $result=dbQuery('
         SELECT *
         FROM blogPosts
@@ -41,9 +41,9 @@ function getAllBlogPosts(){
     ))->fetchAll();
     return $result;
     
-}
+}*/
 
-function getAllCategories($categoryId){
+function getAllCategoryPost($categoryId){
         $result=dbQuery('
             SELECT *
             FROM blogPosts
