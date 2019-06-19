@@ -11,7 +11,7 @@ function createComment($content){
             'blogPostId'=>$_REQUEST['blogPostId']
         ]
     );
-return $content;
+    return $content;
 }
 
 function getAllComments($blogPostId){
@@ -32,7 +32,8 @@ function echoCommentSection(){
 <div class='parent'>
 <form action='' method='post'>
     <input class='commentinput' type='text' name='content' placeholder='Type a comment...'/><br/>
-    <input class='commentbtn' type='submit' name='newComment' value='Post'/>
+    <input class='commentbtn' type='submit' name='newComment' value='Post'/> 
 </form>
 </div>";
 }
+

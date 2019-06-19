@@ -19,11 +19,13 @@ if(isset($_REQUEST['newComment'])){
     createComment(
         $_REQUEST['content']
        );
-} 
-echoCommentSection();
+}
 
+echoCommentSection();
 foreach($comment as $comments)
     echo "<p>".$comments['content']."</p>";
+
+
 
 ?>
 <div class='divbig'></div>

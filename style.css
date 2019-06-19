@@ -330,7 +330,7 @@ p .italic{
 }
 .rcorners{
     border-radius: 5px;
-    border: 2px #c4c4c4;
+    border: 2px black;
     padding: 5px;
     width:50%; 
 }
@@ -383,7 +383,7 @@ p .italic{
 .rborder{
     border-style: dotted;
     border-width: 2px;
-    border-color: white;
+    border-color: black;
     border-radius: 50px;
     margin-top: 50px;
     margin-right:10px;
