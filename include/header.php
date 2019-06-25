@@ -12,7 +12,7 @@ function echoHeader($pageTitle){
     <div class='parent'>    
         <h1 class='child'>COURTYARD COLLECTIVE</h1>
         <a href='signup.php'><div class='child p1 rightborder '> Sign up</div></a>
-        <a href='login.php'><div class='child p1 '> Login</div></a>
+        <a href='login_page.php'><div class='child p1 '> Login</div></a>
     </div>
         <div class='dropdown'>
         <button class='dropbtn'><i class='fas fa-bars'></i></button>
