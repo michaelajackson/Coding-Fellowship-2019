@@ -23,7 +23,7 @@ function echoHeader($pageTitle){
         <div class='topnav;topnav a; topnav a:hover;'>
              <ul>
                  <button type='submit' class='searchbutton'><i class='fa fa-search'></i></button>
-                 <input class='topnav-right; searchbutton;' type='text' placeholder='Search...'>
+                 <input class='search topnav-right; searchbutton;' type='text' placeholder='Search...'>
                  <a href='home.php'>Home</a>
                  <a href='about.php'>About</a>
                  <a href='issuePage.php'>Issues</a>

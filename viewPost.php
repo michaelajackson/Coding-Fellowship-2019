@@ -1,7 +1,6 @@
 <?php
 
 include('config/init.php');
-
 $comment=getAllComments($_GET['blogPostId']);
 $result=getAllCategories($_GET ['blogPostId']);
 $blogPost=getBlogPost($_GET['blogPostId']);
@@ -19,13 +18,20 @@ if(isset($_REQUEST['newComment'])){
     createComment(
         $_REQUEST['content']
        );
+    if(empty($_POST['content'])){
+        echo "invalid comment";
+    }
 }
-
+if(isLoggedIn(true)){
 echoCommentSection();
 foreach($comment as $comments)
     echo "<p>".$comments['content']."</p>";
-
-
+}
+else{
+    echo " 
+    <div class='divbig'> Login to comment </div>
+    ";
+}
 
 ?>
 <div class='divbig'></div>
