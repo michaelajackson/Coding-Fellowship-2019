@@ -15,7 +15,6 @@ if(isset($_REQUEST['attemptLogin'])){
             echo 'Invalid Login';
         }
 }
-
 ?> 
 
 <form action='' method='post'>
