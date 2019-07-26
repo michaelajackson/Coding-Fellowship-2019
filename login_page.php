@@ -12,28 +12,25 @@ if(isset($_REQUEST['attemptLogin'])){
         exit; 
         }
         else{
-            echo 'Invalid Login';
+            echo "<p class='invalid'>Invalid Login<p>";
         }
 }
 ?> 
-
+<html>
+ <div class='bordertop'></div>  
 <form action='' method='post'>
-<div class='bordertop'>
-<div class='divround'>
-        <div class='color'> <h2 class='center'> Login</h2> </div>
-        <div><p>Username</p></div>
-                <input class='rcorners' type='text' name='username'/>
-                <br>
-            <div><p>Password</p></div>
+        <div class='logindiv'>
+        <h2 class='center'> LOGIN</h2>
+       <div class='signupvector'> </div>
+            <div><p class='inputnameslog'>Username</p></div>
+                <input class='rcorners' type='text' name='username'/><br>
+            <div><p class='inputnameslog'>Password</p></div>
                 <input class='rcorners' type='password' name='password'/><br>
-                <input type='hidden' name='attemptLogin' value='true'/><br>
-            <input type='submit' name='login' value='Login' />
+            <input class='signupbtn' type='submit' name='attemptLogin' value='LOGIN'/> 
+             
 </div>
-</form>
-<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <div class='divbig'></div>
-
-<div class='divbig'></div>
-
 <?php
-echoFooter();
+echoFooter()
+?>   

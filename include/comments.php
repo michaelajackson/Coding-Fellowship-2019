@@ -1,20 +1,21 @@
 <?php
 
-function createComment($content){
+function createComment($content,$blogpostId,$userId){
     dbQuery(
         '
-        INSERT INTO comments (content, blogPostId)
-        VALUES(:content, :blogPostId)
+        INSERT INTO comments (content, blogPostId,userId)
+        VALUES(:content, :blogPostId, userId)
         ',
         [
             'content'=>$content,
-            'blogPostId'=>$_REQUEST['blogPostId']
+            'blogPostId'=>$blogPostId,            
+            'userId' => $userId
         ]
     );
     return $content;
 }
 
-function getAllComments($blogPostId){
+function getBlogPostComments($blogPostId){
     $result=dbQuery('
         SELECT *
         FROM comments
@@ -28,7 +29,7 @@ function echoCommentSection(){
     echo"
 <div class='divbig'></div>
 <div class='divbig'></div>
-<div class='bordertop'><p class='p1'>Comments</p></div>
+<div><p class='p1'>Comments</p></div>
 <div class='parent'>
 <form action='' method='post'>
     <input class='commentinput' type='text' name='content' placeholder='Type a comment...'/><br/>

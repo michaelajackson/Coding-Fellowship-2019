@@ -12,3 +12,5 @@ include('include/email.php');
 include('include/signUp.php');
 include('include/footer.php');
 include('include/login.php');
+include('include/featured.php');
+include('include/images.php');

@@ -9,17 +9,18 @@ $categories = getAllCategories();
 
 echo "
 <div class='bordertop'></div>
-<h2> Categories</h2>
+<h2 class='h2feat'> Categories</h2>
 ";
 
 foreach($categories as $category){
     //what page do i want to send this to?
-    echo "<a href='/viewCategory.php?categoryId=".$category['categoryId']."'>
+    echo "<a class='categorybtn' href='/viewCategory.php?categoryId=".$category['categoryId']."'>
         ".$category['name']."
-        </a><br />";
+        </a> <br><br><br><br>";
 }
 ?>
 <html>
+    <br><br><br><br><br><br><br><br>
     <div class='divbig'></div>
 </html>
 <?php

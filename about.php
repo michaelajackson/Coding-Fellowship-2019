@@ -5,13 +5,15 @@ echoHeader("About & Contact");
 ?>
 <div class='bordertop'></div>
     <body>
-    <h2>About</h2>
-    <p> Courtyard Collective is an online magazine for young, queer,creatives of color 
-        <br> to share their artistic visions centered around social issues, 
-         <br>the LGBT+ community, and other minority groups.</p>
+    <h2 class='h2feat'>About</h2><br>
+    <p class='static'>Courtyard Collective is on online zine for QTPOC and other underrepresented voices based in St. Louis, MO. <br><br>
+
+It was created to provide young, queer POC and allies a creative outlet and publish their work. <br><br>
+   
+It was started by Michaela Corinne in 2019.</p>
         <div>
-            <br>
-            <br>
+        
+        
         </div>
          <h2>Contact Us</h2>
     <p><a href='mailto:courtyardcollective@gmail.com'> courtyardcollective@gmail.com</p>

@@ -24,7 +24,7 @@ function getCategoryPost($categoryId){
     $result=dbQuery('
         SELECT *
         FROM category
-        WHERE categoryId= :categoryId
+        WHERE categoryId = :categoryId
     ', array(
         'categoryId'=>$categoryId
     )

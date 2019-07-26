@@ -8,7 +8,7 @@ $issues = getAllIssues();
 
 echo"
 <div class='bordertop'></div>
-<h2> Issues</h2> ";
+<h2 class='h2feat'> Issues</h2> ";
 
 foreach ($issues as $issue){
     echo "<a href='/viewIssue.php?issueId=".$issue['issueId']."'>
