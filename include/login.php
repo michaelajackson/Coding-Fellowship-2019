@@ -29,7 +29,7 @@ function checkIsAdmin($userId){
     return true;   
     }
     else{
-        return false;
+        header('location:login_page.php');
     }
 }
 

@@ -2,18 +2,8 @@
 
 include('config/init.php');
 $comment=getBlogPostComments($_GET['blogPostId']);
-$result=getAllCategories($_GET ['blogPostId']);
+
 $blogPost=getBlogPost($_GET['blogPostId']);
-
-echoHeader($blogPost['title']);
-
-echo "
-<div class='bordertop'></div>
-<h2>".$blogPost['title']."</h2>
-<h5> By ".$blogPost['authorName']."</h5>
-<p>".$blogPost['content']."</p> 
-";
-
 if(isset($_REQUEST['newComment'])){
     createComment(
         $_REQUEST['content'], $_REQUEST['author']
@@ -22,6 +12,24 @@ if(isset($_REQUEST['newComment'])){
         echo "invalid comment";
     }
 }
+echoHeader($blogPost['title']);
+
+echo "
+
+<div class='bordertop'></div>
+<div class='blogPost'</div>
+<h2 class='h2post'>".$blogPost['title']."</h2>
+<h5> By ".$blogPost['authorName']."</h5>
+<p class='cont'>".$blogPost['content']."</p> 
+<img src='/images/Posts/".$blogPost['filePath']."'>
+<br>
+<br>
+<br>
+<p class='descrp'>".$blogPost['description']."</p>
+
+";
+
+
 if(isLoggedIn()){
 echoCommentSection();
 foreach($comment as $comments)
@@ -30,7 +38,7 @@ foreach($comment as $comments)
 }
 else{
     echo " 
-    <div class='divbig'> Login to comment </div>
+    <div class='divbig'> <a href='login_page.php>Login to comment</a> </div>
     ";
 }
 
