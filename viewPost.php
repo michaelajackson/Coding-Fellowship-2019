@@ -1,31 +1,42 @@
 <?php
 
 include('config/init.php');
+$comment=getBlogPostComments($_GET['blogPostId']);
+$result=getAllCategories($_GET ['blogPostId']);
+$blogPost=getBlogPost($_GET['blogPostId']);
 
-
-$result=getAllBlogPosts();
-$blogPosts= getBlogPost($_GET['categoryId']);
-
-
-echoHeader("".$blogPosts['title'], "".$blogPosts ['description']);
+echoHeader($blogPost['title']);
 
 echo "
-<h2>".$blogPosts['title']."</h2>
-<p>".$blogPosts['content']."</p> 
+<div class='bordertop'></div>
+<h2>".$blogPost['title']."</h2>
+<h5> By ".$blogPost['authorName']."</h5>
+<p>".$blogPost['content']."</p> 
 ";
 
 if(isset($_REQUEST['newComment'])){
     createComment(
-        $_REQUEST['content']
-    );
+        $_REQUEST['content'], $_REQUEST['author']
+       );
+    if(empty($_POST['content'])){
+        echo "invalid comment";
+    }
 }
+if(isLoggedIn()){
+echoCommentSection();
+foreach($comment as $comments)
+    echo 
+    "<p>".$comments['content']."</p>";
+}
+else{
+    echo " 
+    <div class='divbig'> Login to comment </div>
+    ";
+}
+
 ?>
- 
- 
- 
- <h3>Comments</h3>
-<form action='' method='post'>
-    Comment:
-    <input type='text' name='content'/><br/>
-    <input type='submit' name='newComment' value='Post'/>
-</form> 
+<div class='divbig'></div>
+
+<?php
+echoFooter();
+?>

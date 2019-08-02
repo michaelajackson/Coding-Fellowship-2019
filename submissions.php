@@ -1,28 +1,35 @@
-<html>
-<head>
-   <link rel="stylesheet" type='text/css' href="style.css"/>
+<?php
 
-   <?php
    include('config/init.php');
       echoHeader('Submissions');
-   ?>
+?>
    <div class='bordertop'></div>
    <body>
-    <h2>How to Send Submissions</h2>
-    <h2>Submission Email: courtyardsubmissions@gmail.com</h2>
-    <p>Written Submissions:</p>
-        <p>Send email to courtyardsubmission@gmail.com briefly describing what your written piece is about.<br>
-        Attach piece either as a Word document or shared Google document. Include your name and pronouns.</p><br>
-     <p>Photography Submissions:</p>
-     <p>Send photos or video through email or share through Google Drive.
-        You many include captions you would <br> 
-        like to attach to each photo, or you may write a 
-      brief synopsis describing you work (not required).<br> Include your name and pronouns.</p><br>
-        <p>Art Submissions:</p> 
-     <p>Send a scan of your work or photos of your work through email. Include title of piece, medium, <br> and year you created it. Also, include name and pronouns.</p>
+    <h2 class='h2feat'>Submissions</h2>
+    <p class='static'><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+We are looking for submissions! <br><br>
+
+ Written submissions:<br>
+Send written submissions in a Word or shared Google Doc. Along with the your work, write a short bio about yourself and a breif description for what you’re submitting. Images to go along with your writing are always a plus.<br><br> 
+
+Photo submissions: <br>
+Attach photographs directly into the email. Write a short bio about yourself, and either a brief decription of each photo, or a description of the photoset as a whole. <br><br>
+
+Video Submissions: <br>
+Post video on youtube, and send in the link. Write a bio about yourself, and a description of the video. <br><br>
+
+Visual Art:<br>
+Email a scanned, photoed, or image file of artwork. Write a bio about yourself, and a description of you work. <br><br>
+
+Submission Email: courtyardsubmission@gmail.com
+</p>
+
+
+
 <div class='divbig'></div>
     <?php
-    echoFooter()
+    echoCommentSection();
+    echoFooter();
     ?>
    </body> 
 </head>

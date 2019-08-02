@@ -6,7 +6,7 @@ function getEmail($email){
         VALUES (:email)
     ',
     [  
-    'email'=>$_REQUEST['email']
+    'email'=>$email
     ] 
     );
 }

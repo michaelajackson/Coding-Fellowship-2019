@@ -1,69 +1,52 @@
-<html>
-   
+
 <?php
- include('config/init.php');
- echoHeader('Courtyard Collective');
+include('config/init.php');
+
+$blogPosts = getFeaturedPosts();
  
- if(isset($_REQUEST['newEmail'])){
-    getEmail(
-        $_REQUEST['email']
-    );
+echoHeader('Courtyard Collective');
+
+if(isset($_REQUEST['filePath'])){
+    $filePath= ($_POST['filePath']);
+    insertImage($filePath);
+}
+?>
+    <form method='post' action=''>
+        <input type='file' accept='.png, .jpg, .jpeg' name='filePath'> 
+        <input type='submit' name='uploadPic' value='submit'> 
+    </form>
+<div class='bordertop'></div>
+ <h2 class='h2feat'>Featured</h2>
+ <?php
+    foreach($blogPosts as $blogPost){
+        echo 
+        "
+        <div class='postCard'>
+        <a href='/viewPost.php?blogPostId=".$blogPost['blogPostId']."'>
+    
+            <h2>".$blogPost['title']."</h2>
+        
+            <p> ".$blogPost['description']."<p>
+            </a><br />
+        </div>";
+    
+    }
+$errors=array();
+global $errors;
+
+if(isset($_REQUEST['newEmail'])){
+
+    $email = ($_POST['email']);
+
+    if(empty($email)){
+        array_push($errors,'Must fill out email');
+    }
+    if(count($errors) == 0){
+        getEmail( $_REQUEST['email']);
+    }
 }
 
-?> 
-
- <h2 class='h2italic'>Featured</h2>
- 
-<div>
-<div class='bordertop'>
-    <p class='p1'>this week</p>
-    <img src='trees.JPG' class='responsiveImage'/>
-    <a href= "post.html"><h2>Blah Blah Blah</h2></a>
-    <p>Description about post...</p>
-    <h6>00/00/00</h6>
-</div>
-
-<div class='divbig'></div>
-
-<div class='card; bordertop'>
-    <p class='p1'>featured poetry</p>
-            <div class= 'parent'>
-                <div class='child'>
-                <div class='pic4'></div></div>
-                <div class='child'><a href='post.php'><h4>Title</h4> </a></div>
-            
-                <div class='child'>
-                <div class='pic3'></div>
-                <div class= 'child'><a href='post.php'><h4>Title</h4> </a></div>
-            </div>
-</div>
-            <div class='parent'>
-                <div class='child'>
-                <div class='pic2'></div></div>
-                <div class='child'><a href='post.php'><h4>Title</h4> </a></div>
-            
-                <div class='child'>
-                <div class=pic></div>
-                <div class='child'><a href='post.php'><h4>Title</h4> </a></div>
-            </div>
-    </div>
-
-</div>
-
-<div>
-
-<div class='card; bordertop'>
-    <p class='p1'>featured writing</p>
-</div>
-
-</div>
-
-
-</div>  
-<div class='divbig'></div>
-</body>
-<?php
+displayErrors();
 echoFooter();
 ?>
-
 </html>

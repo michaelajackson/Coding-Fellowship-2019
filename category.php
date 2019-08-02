@@ -4,20 +4,26 @@
 include('config/init.php');
 echoHeader('Categories');
 
-$category = getAllCategoryPost();
+$categories = getAllCategories();
 
 
 echo "
-<h2> Categories</h2>
+<div class='bordertop'></div>
+<h2 class='h2feat'> Categories</h2>
 ";
 
-foreach($category as $categories){
+foreach($categories as $category){
     //what page do i want to send this to?
-    echo "<a href='/viewPost.php?categoryId=".$categories['categoryId']."'>
-        ".$categories['name']."
-        </a><br />";
+    echo "<a class='categorybtn' href='/viewCategory.php?categoryId=".$category['categoryId']."'>
+        ".$category['name']."
+        </a> <br><br><br><br>";
 }
-
-
+?>
+<html>
+    <br><br><br><br><br><br><br><br>
+    <div class='divbig'></div>
+</html>
+<?php
+echoFooter();
 ?>
 
