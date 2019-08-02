@@ -1,11 +1,834 @@
 
 body{
-        background-color:#eee;
-    }
-.PageWrapper{
-    max-width:800-x; margin:auto; background-color: white; padding:10px;
+    background-color:white;
+    margin-left:50px;
+    margin-right:50px;
+}
+.right{
+    float: right;
+    width: 300px
+}
+.pageWrapper{ 
+    background-color:#c4c4c4; 
+    padding:10px;
+    margin-left:auto;
+    margin-right:auto;
+    float: center;
+    
+}
+.center{
+    position: absolute;
+    width: 528px;
+    height: 49px;
+    left: 210px;
+    top: -15px;
+    
+    
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    
+    color: #000000;
+    
 }
 .Sanserif{
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif,'Gill Sans', 'Gill Sans MT','Trebuchet MS', sans-serif
 }
-p.dotted {border-style: dotted;}
+.monospace{
+    font-family:'Courier New', Courier, monospace, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',Verdana, sans-serif,
+}
+p.dotted {
+    border-style: dotted;
+}
+h1{
+    position: absolute;
+    width: 526px;
+    height: 44px;
+    margin-left: 340px;
+    margin-right: 400px;
+    top: 50px;
+    word-spacing: 40px;
+
+    font-family: Muli;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #5EB1B1;
+}
+/* The nav bar container*/
+.topnav{
+    position: absolute;
+    width: 900px;
+    height: 24px;
+    left: 300px;
+    top: 120px;
+
+}
+/* Navbar links */
+.topnav a {
+    display: block;
+    color: black;
+    padding:14px 16px;
+    text-decoration: none;
+    float:left;
+}
+/* Links- change color on hover*/
+.topnav a:hover {
+    background-color: #ffffff;
+    color: #b5b5b5
+}
+/*Style the "active" element to highlight the current page*/
+.topnav a.active{
+    background-color: #ffffff;
+    color: #b5b5b5
+}
+.topnav input[type=text]{
+    float:right;
+    padding:6px;
+    border: none;
+    margin-top:8px;
+    margin-right:16px;
+    font-size:14px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #255E5E;
+}
+.topnav-right{
+    float:right
+}
+h2{
+    Text-align:left;
+    font-size:20px;
+    font-family: 'lucida grande', 'lucida sans','arial', 'san-serif';
+}
+ul{
+    text-align:center;
+    font-size:15px;
+    font-family: 'lucida grande';
+}
+
+    
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 254px;
+    left: 0px;
+
+    
+    background: #5EB1B1;
+}
+.footerh2{
+    
+    width: 553px;
+    height: 45px;
+    margin-left:50px;
+    margin-right: 300px;
+    
+    
+    font-family: Muli;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    
+    color: #255E5E;
+    
+}
+input{
+    font-style:'lucida grande'
+}
+.bordertop{
+    position: absolute;
+    width: 1148px;
+    height: 0px;
+    left: 64px;
+    top: 185px;
+    
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+.fakeimg{
+    background-color:#c5c5c5;
+    padding: 20px;
+    margin-top: 20px;
+    height: 50px;
+    width: 60px;
+    Float: left;
+}
+/* Add a card effect for articles*/
+.postCard{
+    background-color:white;
+    padding: 20px;
+    margin-top: 500px;
+    border-color: #b5b5b5;
+    margin-right: 150px;
+    margin-left: 150px;
+    
+}
+ul{
+    float: center; 
+    font-family: 'Lucida Grande';
+    font-size: 14px;
+}
+.h2feat{
+    position: absolute;
+    width: 312px;
+    height: 31px;
+    left: 590px;
+    top: 287px;
+
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+}
+.searchbutton{
+    float:right;
+    width: 20px;
+    height: 20px;
+}
+.search{
+    width:300px;
+}
+h3{
+    text-align:left;
+    font-family: 'lucida grande';
+    margin-left:2cm
+}
+.p1{
+    text-align: left;
+    font-family: 'lucida grande';
+    margin-right: 14cm;
+    font-size:12px;
+}
+p{
+    font-family: 'lucida grande';
+    font-size:14px;
+}
+.divbig{
+    height:200px;
+    background-color:white 
+}
+.row{
+    content:"";
+    display: table;
+    clear:both;
+}
+.photo{
+    background-image:url(test.jpg);
+    width:100%;
+    height: auto;
+
+}
+.img p{
+    font-family:'lucida grande';
+    color: white;
+
+}
+.responsiveImage{
+    width:100%;
+    height: auto;
+}
+.dropbtn{
+    display:none;
+}
+@media (max-width:600px){
+.dropbtn{
+    background-color:white;
+    color:black;
+    padding: 10px;
+    font-size: 12px;
+    border: solid;
+    border-width: 1px;
+    display:inline-block;
+    position:relative;
+}
+.dropdown{
+    position:relative;
+    display:inline-block;
+}
+.dropdown-content{
+    display:none;
+    position: absolute;
+    background-color: white;
+    min-width:160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+    
+}
+.dropdown-content a{
+    color:black;
+    padding:12px 16px;
+    text-decoration: none;
+    display:block;
+}
+.dropdown-content a:hover{
+    color:#b5b5b5
+}
+.dropdown:hover .dropdown-content{
+    display:block;
+}
+.dropdown:hover .dropbtn{
+    background-color:white;
+}
+    .topnav{
+        position: absolute;
+        width: 604px;
+        height: 24px;
+        left: 405px;
+        top: 171px;
+
+    
+    }
+    /* Navbar links */
+    .topnav a {
+        display: none;
+       
+    }
+    /* Links- change color on hover*/
+    .topnav a:hover {
+        display:none;
+    }
+    /*Style the "active" element to highlight the current page*/
+    .topnav a.active{
+        display:none;
+    }
+    .topnav input[type=text]{
+        display:none;
+    }
+    .topnav-right{
+        display:none;
+
+}
+}
+.parent{
+    display:flex;
+    flex-direction:row;
+    box-flex:row wrap;
+    justify-content: space-between;
+    margin:auto;
+    margin-bottom: 50px;
+}
+.child{
+    width: auto;
+    height:75px;
+    margin:auto;
+    
+}
+.pic{
+    background-image: url(tinypic.jpg);
+    padding: 20px;
+    margin-top: 20px;
+    height: 60px;
+    width: 60px;
+}
+
+
+div.transbox{
+    margin:30px;
+    background-color:white;
+    border:none;
+    opacity:0.7;
+    height:200px;
+    width: 300px;
+}
+p .italic{
+    font-style:italic;
+    font-family: "lucida grande";
+}
+.borderleft{
+    border-left-style: solid;
+    border-width: 1px;
+    padding:5px;
+    border-color:#c4c4c4;
+}
+.rightborder{
+    border-right-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    border-color: #c4c4c4;
+    height: 10px;
+}
+.rcorners{
+ position: absolute;
+width: 192px;
+height: 18px;
+margin-left:5px;
+
+
+background: #FFFFFF;
+border: 1.5px solid #000000;
+box-sizing: border-box;
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.signupdiv{
+    position: absolute;
+    width: 529px;
+    height: 450px;
+    left: 360px;
+    top: 279px;
+    
+   
+    
+    background: #FFFFFF;
+    border: 1.5px solid #000000;
+    box-sizing: border-box;
+
+}
+.h4{
+    font-family:'lucida grande';
+    padding:10px;
+}
+.subscribe{
+    position: relative;
+    padding:50px;
+    width: 202px;
+    height: 16px;
+    left: 850px;
+    bottom:150px;
+    
+    font-family: Muli;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    
+    color: #255E5E; 
+}
+.newslttrinput{
+    position: absolute;
+    width: 217px;
+    height: 51px;
+    left: 800px;
+    bottom: 100px;
+    
+    background:#5EB1B1;
+    border: 2px solid #255E5E;
+    box-sizing: border-box;
+    color:#255E5E;
+    
+}
+.subbutton{
+    position: absolute;
+    width: 102px;
+    height: 51px;
+    left: 1016px;
+    bottom: 100px;
+    
+    background: #5EB1B1;
+    border: 2px solid #255E5E;
+    
+}
+.rborder{
+    border-style: dotted;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-right:10px;
+}
+.placeholder{
+    color: #255E5E;
+}
+.commentinput{
+    border:none;
+    border-bottom:solid black 2px;
+    width: 600px;
+    height: 40px;
+}
+.commentbtn{
+    background-color:#c4c4c4;
+    height:20px;
+    float:right;
+}
+div.color{
+    background-color: #c3c3c3;
+    display: block; 
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.holdercolor ::placeholder{
+    color:white; 
+}
+.signupbtn{
+   
+    position: absolute;
+    width: 212px;
+    height: 47px;
+    left: 275px;
+    top: 200px;
+    
+    background: #FFFFFF;
+    border: 1.5px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Muli;
+
+    font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #000000;
+}
+.home{
+
+width: 92px;
+height: 23px;
+left: 405px;
+top: 171px;
+
+font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #000000;
+
+}
+.about{
+
+width: 66px;
+height: 23px;
+left: 547px;
+top: 171px;
+
+font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #000000;
+
+}
+.categories{
+
+width: 77px;
+height: 23px;
+left: 663px;
+top: 172px;
+
+font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #000000;
+}
+.issue{
+
+width: 89px;
+height: 23px;
+left: 780px;
+top: 172px;
+
+font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #000000;
+}
+.submissions{
+
+width: 90px;
+height: 23px;
+left: 919px;
+top: 172px;
+
+font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #000000;
+
+}
+.login{
+    position: absolute;
+width: 35px;
+height: 16px;
+left: 1100px;
+top: 30px;
+
+font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #000000;
+}
+.signup{
+    position: absolute;
+width: 61px;
+height: 16px;
+left: 1175px;
+top: 30px;
+
+font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #000000;
+
+}
+.imgpost{
+    position: absolute;
+    width: 44px;
+    height: 67px;
+    margin-left:560px;
+    top: 50px;
+    
+    background: url(courtyard_cs.jpg), #C4C4C4;
+}
+.footercontact{
+
+    width: 240px;
+    height: 28px;
+    margin-left: 50px;
+    margin-right: 300px;
+    
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+    
+    color: #255E5E;
+}
+.emailfoot{
+
+width: 328px;
+height: 17px;
+margin-left:50px;
+margin-right:900px;
+top: 2594px;
+
+font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+display: flex;
+align-items: center;
+letter-spacing: 0.1em;
+
+color: #255E5E;
+}
+.subinput[type=text]{
+
+
+
+font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #255E5E;
+}
+.subbtntext{
+
+
+
+
+font-family: Muli;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 16px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.1em;
+
+color: #255E5E;
+
+}
+.signupvector{
+    position: absolute;
+width: 526.5px;
+height: 0px;
+left: 0px;
+top: 50px;
+
+border: 1px solid #000000;
+}
+p.static{
+    margin-top:250px;
+    width: 457px;
+    height: 297px;
+    left: 154px;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1em;
+
+    color: #000000;
+
+}
+.categorybtn{
+    position: absolute;
+    width: 307px;
+    height: 38px;
+    margin-left:15px;
+    margin-top: 300px;
+    padding-left: 100px;
+    padding-right: 30px;
+    
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+.inputnameslog{
+ margin-top:80px;
+ margin-left: 5px;
+}
+.inputnames{
+    margin-top:55px;
+    margin-left: 5px;
+}
+.logindiv{
+    position: absolute;
+    width: 529px;
+    height: 343px;
+    left: 360px;
+    top: 279px;
+    
+   
+    
+    background: #FFFFFF;
+    border: 1.5px solid #000000;
+    box-sizing: border-box;
+
+}
+.invalid{
+    color:red;
+    font-family:'Muli';
+    margin-top:245px;
+    margin-left:310px;
+
+}
+.issueimg{
+    position: absolute;
+    width: 250px;
+    height: 358px;
+    float:center;
+    top: 200px;
+
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.35);
+    
+    background: url(COURTCOLL_BOOK_FILE_UNF.jpg), #C4C4C4;
+}
+.shop{
+    width: 57px;
+    height: 23px;
+    left: 900px;
+    top: 130px;
+    
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.1em;
+    
+    color: #000000;  
+}
+.feat{
+    position: absolute;
+    top: 250px;
+}
