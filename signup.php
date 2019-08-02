@@ -30,6 +30,7 @@ if(count($errors) == 0){
         insertUser(
             $_REQUEST['username'], sha1($_REQUEST['password']), $_REQUEST['name'], $_REQUEST['email']);
         header('location:signup.php');
+        exit;
         }
 }
         

@@ -8,16 +8,15 @@ function getFeaturedPosts(){
         AND delete_at is NULL
         ORDER BY datePublished DESC
         
-    ');
+    ')->fetchAll();
     return $result;
 }
 
-function updateFeaturedPosts($blogPostId, $categoryId){
+function addPostToFeaturedList($blogPostId){
     $result = dbQuery('
         UPDATE blogPosts
         SET isFeatured = 1 
         WHERE blogPostId = :blogPostId
-        AND categoryId = :categoryId
     ',array(
         'blogPostId' => $blogPostId
     ))->fetch();
